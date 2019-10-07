@@ -41,7 +41,7 @@ npm install -g truffle
 To install truffle dependencies 
 
 ```bash
-# At project root folder (I.E '../resk-react-webpack-box/')
+# At project root folder (I.E '../rsk-next-box/')
 npm install
 ```
 
@@ -85,14 +85,14 @@ truffle migrate --network testnet
 First install it's dependenices.
 
 ```bash
-# At app folder (I.E '../resk-react-webpack-box/app')
+# At app folder (I.E '../rsk-next-box/app')
 npm install
 ```
 
 Then you can run the `app/` with
 
 ```bash
-# At app folder (I.E '../resk-react-webpack-box/app')
+# At app folder (I.E '../rsk-next-box/app')
 npm start
 ```
 
@@ -103,7 +103,7 @@ npm start
 To build the `app/` run 
 
 ```bash
-# At app folder (I.E '../resk-react-webpack-box/app')
+# At app folder (I.E '../rsk-next-box/app')
 npm build
 ```
 
@@ -116,7 +116,7 @@ npm build
 This project is integrated with [Prettier](https://prettier.io/) for handling code format. You can format the `app/` runing 
 
 ```bash
-# At app folder (I.E '../resk-react-webpack-box/app')
+# At app folder (I.E '../rsk-next-box/app')
 npm lint
 ```
 
