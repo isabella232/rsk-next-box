@@ -1,4 +1,4 @@
-# RSK React Webpack Box
+# RSK Next JS Box
 
 ## Description
 
