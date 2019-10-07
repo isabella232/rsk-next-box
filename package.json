@@ -1,0 +1,19 @@
+{
+  "name": "rsk-next-box",
+  "version": "1.0.0",
+  "description": "truffle environment",
+  "keywords": [
+    "rsk",
+    "truffle"
+  ],
+  "author": "fedejinich",
+  "license": "ISC",
+  "main": "truffle-config.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "dependencies": {
+    "truffle-hdwallet-provider": "^1.0.17"
+  },
+  "devDependencies": {}
+}
