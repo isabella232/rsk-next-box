@@ -93,7 +93,7 @@ Then you can run the `app/` with
 
 ```bash
 # At app folder (I.E '../rsk-next-box/app')
-npm start
+npm run dev
 ```
 
 **The page will automatically reload if you make changes to the code.**
