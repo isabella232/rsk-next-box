@@ -13,7 +13,7 @@ This starter contains two main elements
 Run the unbox command
 
 ```bash
-truffle unbox rsk-next-box
+truffle unbox rsksmart/rsk-next-box
 ```
 
 For simplicity, there is hook that is going to setup the environment and install all it's dependencies.
