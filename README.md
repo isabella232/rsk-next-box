@@ -50,7 +50,7 @@ Now, the only thing you'll need to do it's to copy your mnemonic to truffle-conf
 ```js
 // truffle-config.json
 
-const HDWalletProvider = require('truffle-hdwallet-provider');
+const HDWalletProvider = require('@truffle/hdwallet-provider');
 
 //Put your mnemonic here, take care of this and don't deploy your mnemonic into production!
 const mnemonic = 'A_MNEMONIC';
