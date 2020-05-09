@@ -19,7 +19,7 @@ First ensure you are in a new and empty directory.
 
 3. Install dependencies and Run the development console.
     ```javascript
-    yarn
+    yarn    # alternatively `npm install`
     truffle develop
     ```
 
@@ -33,7 +33,7 @@ First ensure you are in a new and empty directory.
     ```javascript
     // in another terminal (i.e. not in the truffle develop prompt)
     cd app
-    npm run dev
+    yarn run dev   # alternatively `npm start dev`
     ```
 
 6. Truffle can run tests written in Solidity or JavaScript against your smart contracts. Note the command varies slightly if you're in or outside of the development console.
