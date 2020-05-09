@@ -118,7 +118,7 @@ For more information about the **Gas** and **minimumGasPrice** please go [here](
     # Console for Mainnet
     truffle console --network mainnet
 
-    # Console forn Testnet
+    # Console for Testnet
     truffle console --network testnet
     ```
 
