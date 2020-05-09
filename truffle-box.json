@@ -7,10 +7,10 @@
     "Compile contracts": "truffle compile",
     "Migrate contracts": "truffle migrate",
     "Test contracts": "truffle test",
-    "Run dev server": "cd app && yarn start",
+    "Run dev server": "cd app && yarn run dev",
     "Build for production": "cd app && yarn build"
   },
   "hooks": {
-    "post-unpack": "npm install && npm install -g yarn && cd app/ && yarn"
+    "post-unpack": "yarn && cd app && yarn"
   }
 }

@@ -17,8 +17,9 @@ First ensure you are in a new and empty directory.
     truffle unbox rsksmart/rsk-next-box
     ```
 
-3. Run the development console.
+3. Install dependencies and Run the development console.
     ```javascript
+    yarn
     truffle develop
     ```
 
