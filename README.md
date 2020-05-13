@@ -17,8 +17,9 @@ First ensure you are in a new and empty directory.
     truffle unbox rsksmart/rsk-next-box
     ```
 
-3. Run the development console.
+3. Install dependencies and run the development console.
     ```javascript
+    yarn    # alternatively `npm install`
     truffle develop
     ```
 
@@ -32,7 +33,7 @@ First ensure you are in a new and empty directory.
     ```javascript
     // in another terminal (i.e. not in the truffle develop prompt)
     cd app
-    npm run dev
+    yarn run dev   # alternatively `npm start dev`
     ```
 
 6. Truffle can run tests written in Solidity or JavaScript against your smart contracts. Note the command varies slightly if you're in or outside of the development console.
@@ -117,7 +118,7 @@ For more information about the **Gas** and **minimumGasPrice** please go [here](
     # Console for Mainnet
     truffle console --network mainnet
 
-    # Console forn Testnet
+    # Console for Testnet
     truffle console --network testnet
     ```
 
