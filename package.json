@@ -1,7 +1,11 @@
 {
   "name": "rsk-next-box",
-  "version": "1.0.0",
-  "description": "truffle environment",
+  "version": "1.0.1",
+  "description": "Truffle box to develop using Truffle and NextJS on RSK blockchain",
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/rsksmart/rsk-next-box.git"
+  },
   "keywords": [
     "rsk",
     "truffle"
@@ -13,7 +17,7 @@
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "dependencies": {
-    "@truffle/hdwallet-provider": "^1.0.28"
+    "@truffle/hdwallet-provider": "1.0.34"
   },
   "devDependencies": {}
 }

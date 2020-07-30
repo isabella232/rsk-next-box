@@ -1,13 +1,16 @@
 {
   "ignore": [
     "README.md",
-    ".gitignore"
+    ".gitignore",
+    "box-img-lg.png",
+    "box-img-sm.png",
+    "images/"
   ],
   "commands": {
     "Compile contracts": "truffle compile",
     "Migrate contracts": "truffle migrate",
     "Test contracts": "truffle test",
-    "Run dev server": "cd app && yarn run dev",
+    "Run dev server": "cd app && npm run dev",
     "Build for production": "cd app && yarn build"
   },
   "hooks": {

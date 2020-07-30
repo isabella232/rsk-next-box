@@ -8,11 +8,12 @@ export let web3Testnet = new Web3(
   new Web3.providers.HttpProvider('https://public-node.testnet.rsk.co'),
 );
 export async function getSimpleStorageValue() {
-  // To connect to RSK network uncomment the following line.
+  // To connect to RSK network update line 15 for one of the following providers:
   // const provider = new Web3.providers.HttpProvider("https://public-node.testnet.rsk.co");
   // const provider = new Web3.providers.HttpProvider("https://public-node.rsk.co");
 
   const provider = new Web3.providers.HttpProvider("http://127.0.0.1:8545")
+  
   const web3 = new Web3(provider);
   const networkId = await web3.eth.net.getId();
   const deployedNetwork = SimpleStorageContract.networks[networkId];

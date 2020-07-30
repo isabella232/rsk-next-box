@@ -1,6 +1,6 @@
 {
   "name": "rsk-next-box",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "next js dapp",
   "main": "index.js",
   "scripts": {
@@ -26,7 +26,7 @@
     "react-bootstrap": "^1.0.0-beta.14",
     "react-dom": "^16.10.1",
     "react-markdown": "^4.2.2",
-    "web3": "1.0.0-beta.55"
+    "web3": "1.2.7"
   },
   "devDependencies": {
     "@types/react": "^16.9.4",
