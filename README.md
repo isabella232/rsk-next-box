@@ -262,8 +262,6 @@ npm run dev
 
 Go to your browser at [http://localhost:3000/](http://localhost:3000/)
 
-![localhost port 3000](/images/rsk-next-box-06.png)
-
 > Note that when you are connected to an RSK network, you do not need to leave open the Truffle console, because the app is connected via a public node, directly to the network.
 
 ## Next steps
