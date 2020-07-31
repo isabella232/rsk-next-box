@@ -270,7 +270,7 @@ Go to your browser at [http://localhost:3000/](http://localhost:3000/)
 
 - **Go to tutorial**
 
-Go to the tutorial [Using rsk-next-box](https://developers.rsk.co/tutorials/truffle-boxes/rsk-next-box/) to learn more about this project. We covered all the steps with more details, explanations, and images.
+Go to the tutorial [using rsk-next-box](https://developers.rsk.co/tutorials/truffle-boxes/rsk-next-box/) to learn more about this project. We covered all the steps with more details, explanations, and images.
 
 - **Find more documentation**
 
