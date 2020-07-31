@@ -1,6 +1,6 @@
 # RSK Next JS Box
 
-This box comes with everything you need to start using smart contracts from a react app and Next JS on [RSK Blockchain](https://developers.rsk.co/rsk/).
+This box comes with everything you need to start using smart contracts from a react app and [Next JS](https://nextjs.org/) on [RSK Blockchain](https://developers.rsk.co/rsk/).
 It includes network configurations for Mainnet, Testnet and the SimpleStorage contract as an example to deploy.
 
 ## Requirements
@@ -12,7 +12,7 @@ Go to [Node.js](https://nodejs.org/en/) if you need to install it.
 
 2. Truffle
 
-Install Truffle globally
+Install Truffle globally:
 
 ```shell
 npm install -g truffle
@@ -117,7 +117,6 @@ And the `migrate output` should be similar to:
 
 ![truffle migrate](/images/rsk-next-box-03.png)
 
-# FIX TESTS
 6. Running contract tests.
 
 Our box also comes with the file `TestSimpleStorage.js` for testing the smart contract. You can check it out in the `test` folder.
@@ -130,9 +129,10 @@ test
 
 This `test output` should be similar to:
 
-![truffle test](/images/rsk-starter-box-04.png)
+![truffle test](/images/rsk-next-box-04.png)
 
 Note the command varies slightly if you're in or outside of the development console.
+
 ```javascript
 // inside the development console.
 test
@@ -148,6 +148,7 @@ Our box has done a front end to interact with the smart contract, built using Re
 7. In another terminal (i.e. not in the truffle develop prompt), go to the `app` directory and run the React app.
 
 > Do not close the other terminal, which is running the Truffle development console, because it is our Blockchain simulator.
+> 
 > If you close it and then open it again, you need to deploy / migrate the smart contract again too!
 
 ```shell
@@ -202,22 +203,22 @@ or .minimum-gas-price-mainnet.json, respectively.
 
 In the `truffle-config.js`, we are reading the parameter `minimumGasPrice` in each json file.
 
-For more information about the **Gas** and **minimumGasPrice** please go to [gas](https://developers.rsk.co/rsk/rbtc/gas/ "Gas - RSK Developers Portal").
+For more information about the **Gas** and **minimumGasPrice** please go to [gas page](https://developers.rsk.co/rsk/rbtc/gas/ "Gas - RSK Developers Portal").
 
 ### Connect to RSK
 
 1. Copy your mnemonic to `truffle-config.js`
 
-    ```javascript
-    //Put your mnemonic here, be careful not to deploy your mnemonic into production!
-    const mnemonic = 'A_MNEMONIC';
-    ```
+```javascript
+//Put your mnemonic here, be careful not to deploy your mnemonic into production!
+const mnemonic = 'A_MNEMONIC';
+```
 
-    Please be aware that we are using `HDWalletProvider` with RSK Networks derivations path:
-    - RSK Mainnet dpath: `m/44’/137’/0’/0`
-    - RSK Testnet dpath: `m/44’/37310’/0’/0`
+Please be aware that we are using `HDWalletProvider` with RSK Networks derivations path:
+- RSK Mainnet dpath: `m/44’/137’/0’/0`
+- RSK Testnet dpath: `m/44’/37310’/0’/0`
 
-    For more information check [RSKIP57](https://github.com/rsksmart/RSKIPs/blob/master/IPs/RSKIP57.md).
+For more information check [RSKIP57](https://github.com/rsksmart/RSKIPs/blob/master/IPs/RSKIP57.md).
 
 2. Update Express JS component. 
 
@@ -226,31 +227,32 @@ The component located in the file `web3-util.js` uses the [web3.js](https://web3
 Choose which network you would like to connect the server to RSK Network 
 and update line 15 of the file `app/utils/web3-util.js`
 
-    **Testnet**
-    ```js    
-    const provider = new Web3.providers.HttpProvider("https://public-node.testnet.rsk.co");    
-    ```
+**Testnet**
+```js    
+const provider = new Web3.providers.HttpProvider("https://public-node.testnet.rsk.co");    
+```
 
-    **Mainnet**
-    ```js        
-    const provider = new Web3.providers.HttpProvider("https://public-node.rsk.co");
-    ```
+**Mainnet**
+```js        
+const provider = new Web3.providers.HttpProvider("https://public-node.rsk.co");
+```
 
 3. Run the development console for any RSK network.
 
-    ```shell
-    # Console for Mainnet
-    truffle console --network mainnet
+```shell
+# Console for Testnet
+truffle console --network testnet
 
-    # Console for Testnet
-    truffle console --network testnet
-    ```
+# Console for Mainnet
+truffle console --network mainnet
+```
 
 4. Migrate the smart contracts. We will do it running the below commands directly in the terminal, without using the truffle console now to show to you this alternative.
 
-    ```shell
-    truffle migrate
-    ```
+```shell
+truffle migrate
+```
+
 5. In a terminal, go to the `app` directory and run the React app.
 
 ```shell
@@ -260,7 +262,7 @@ npm run dev
 
 Go to your browser at [http://localhost:3000/](http://localhost:3000/)
 
-![localhost port 3000](/images/rsk-next-box-06.png)
+![localhost port 3000](/images/rsk-next-box-07.png)
 
 > Note that when you are connected to an RSK network, you do not need to leave open the Truffle console, because the app is connected via a public node, directly to the network.
 
@@ -268,7 +270,7 @@ Go to your browser at [http://localhost:3000/](http://localhost:3000/)
 
 - **Go to tutorial**
 
-Go to the tutorial [Using rsk-next-box](https://developers.rsk.co/tutorials/truffle-boxes/rsk-next-box/) to learn how to implement more funcionalities in the project. Also, we covered all the steps with more details, explanations, and images.
+Go to the tutorial [Using rsk-next-box](https://developers.rsk.co/tutorials/truffle-boxes/rsk-next-box/) to learn more about this project. We covered all the steps with more details, explanations, and images.
 
 - **Find more documentation**
 
