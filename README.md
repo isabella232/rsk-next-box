@@ -220,7 +220,23 @@ Please be aware that we are using `HDWalletProvider` with RSK Networks derivatio
 
 For more information check [RSKIP57](https://github.com/rsksmart/RSKIPs/blob/master/IPs/RSKIP57.md).
 
-2. Update Express JS component. 
+2. Run the development console for any RSK network.
+
+```shell
+# Console for Testnet
+truffle console --network testnet
+
+# Console for Mainnet
+truffle console --network mainnet
+```
+
+3. Migrate the smart contracts. We will do it running the below commands directly in the terminal, without using the truffle console now to show to you this alternative.
+
+```shell
+truffle migrate
+```
+
+4. Update Express JS component. 
 
 The component located in the file `web3-util.js` uses the [web3.js](https://web3js.readthedocs.io/) library to interact with the blockchain - writing code that reads and writes data from the blockchain with smart contracts.
 
@@ -235,22 +251,6 @@ const provider = new Web3.providers.HttpProvider("https://public-node.testnet.rs
 **Mainnet**
 ```js        
 const provider = new Web3.providers.HttpProvider("https://public-node.rsk.co");
-```
-
-3. Run the development console for any RSK network.
-
-```shell
-# Console for Testnet
-truffle console --network testnet
-
-# Console for Mainnet
-truffle console --network mainnet
-```
-
-4. Migrate the smart contracts. We will do it running the below commands directly in the terminal, without using the truffle console now to show to you this alternative.
-
-```shell
-truffle migrate
 ```
 
 5. In a terminal, go to the `app` directory and run the React app.
